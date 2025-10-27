@@ -3,8 +3,7 @@ services:
     name: ai-research-synthesizer
     env: node
     buildCommand: npm run build
-    startCommand: serve dist
-    staticPublishPath: dist
+  startCommand: serve dist
     envVars:
       - key: GEMINI_API_KEY
         sync: false
