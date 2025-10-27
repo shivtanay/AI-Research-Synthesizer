@@ -1,0 +1,9 @@
+services:
+  - type: static
+    name: ai-research-synthesizer
+    env: node
+    buildCommand: npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
