@@ -1,8 +1,9 @@
 services:
-  - type: static
+  - type: web
     name: ai-research-synthesizer
     env: node
     buildCommand: npm run build
+    startCommand: serve dist
     staticPublishPath: dist
     envVars:
       - key: GEMINI_API_KEY
